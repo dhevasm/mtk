@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input, select:hover{
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(66, 66, 240);
+}
+
+.hov:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(bg.jpg);
+    background-size: cover;
+    gap: 20px;
+}
+
+.output{
+    display: flex;
+    justify-content: center;
+    align-items: center;flex-direction: column;
+}
+
+.output .hasil li{
+    list-style: none;
+    
+}
+
+.none{
+    display: none;
+}
+
+.lingkaran{
+    background-color: white;
+    /* filter: drop-shadow(3px 3px 3px white); */
+    border-radius: 100%;
+    transition: 1s;
+}
+
+@keyframes anim {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+.animated{
+    animation: anim 1s forwards;
+}
+
+input {
+    border: none;
+    outline: none;
+    color: black;
+    text-align: center;
+    padding: 12px 0px 12px;
+    border-radius: 25px;
+}
+
+
+.sin{
+    background-color: white;
+    color: black;
+    padding: 0px 7px 0px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+button{
+    color: black;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+select{
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+    width: 100%;
+    transition: 0.3s;
+}
+
+option{
+    color: black;
+    border-radius: 25px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.hasil{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lingkaran{
+    margin: 10px;
+}
